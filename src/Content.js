@@ -1,4 +1,4 @@
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import {Container, Row, Col, Table} from 'react-bootstrap';
 import axios from 'axios';
 

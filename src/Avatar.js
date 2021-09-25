@@ -1,11 +1,19 @@
+import { Component } from 'react';
 import { Image } from 'react-bootstrap'; 
 
-function Avatar() {
-  return (
-    <div className="image-wrapper">
-      <Image src="avatar.png" roundedCircle />
-    </div>
-  );
+class Avatar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {};
+  }
+
+  render(){
+    return (
+      <div className="image-wrapper">
+        <Image src="avatar.png" roundedCircle />
+      </div>
+    );
+  }
 }
 
 export default Avatar;

@@ -3,17 +3,17 @@ import {Container, Row, Col, Table} from 'react-bootstrap';
 import axios from 'axios';
 
 class Content extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       albums: [],
-      isLoaded: false
+      isSuccesful: false
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
     axios.get('https://jsonplaceholder.typicode.com/albums')
-    .then((res) => this.setState({ albums: res.data, isLoaded: true }, ()=>console.log(this.state) ))
+    .then((res) => this.setState({ albums: res.data, isSuccesful: true }))
   }
 
   render(){
@@ -21,7 +21,7 @@ class Content extends Component {
       <Container>
         <Row>
           <Col>
-            {this.state.isLoaded ?
+            {this.state.isSuccesful ?
               <Table striped bordered hover size="sm">
                 <thead>
                   <tr>

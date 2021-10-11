@@ -5,15 +5,9 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 class UserDetails extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {
-
-    }
-  }
-
-  componentDidMount() {
-    console.log(this.props);
+    this.state = {};
   }
 
   render() {
@@ -24,7 +18,7 @@ class UserDetails extends Component {
             <Avatar />
           </Col>
           <Col> 
-            <UserInfo data = {this.props.data} />
+            <UserInfo data={this.props.data} />
           </Col>      
         </Row>
       </Container> 

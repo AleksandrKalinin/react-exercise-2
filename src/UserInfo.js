@@ -11,15 +11,14 @@ class UserInfo extends Component {
     };
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.setState({
       data: this.props.data
-    }, () => {console.log(this.state.data)})
-
+    })
   }
 
 
-  setVisibility = () =>{
+  setVisibility = () => {
     this.setState({
       isOpen: !this.state.isOpen
     })
@@ -43,7 +42,6 @@ class UserInfo extends Component {
       </div>
     );
   }
-
 }
 
 export default UserInfo;

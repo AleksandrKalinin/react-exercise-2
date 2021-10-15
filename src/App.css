@@ -1,0 +1,23 @@
+.main {
+  padding: 20px 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.image-wrapper {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
